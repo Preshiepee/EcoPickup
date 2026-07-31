@@ -1,39 +1,44 @@
-document.getElementById("registerForm").addEventListener("submit", function(event) {
+// Register Form
 
-    event.preventDefault();
+const registerForm = document.getElementById("registerForm");
 
-    const data = {
-        fullname: document.getElementById("fullname").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        address: document.getElementById("address").value
-    };
+if (registerForm) {
 
-    fetch("https://script.google.com/macros/s/AKfycbyrcrSTZbWZRrcSg8gcuRp9emAmRxnKCk1IM0sdX7mKBc9voDdpVxqW0k9gQGgtafQ9/exec", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(result => {
+    registerForm.addEventListener("submit", function(event) {
 
-        alert("✅ Registration Successful!");
+        event.preventDefault();
 
-        document.getElementById("registerForm").reset();
+        const fullname = document.getElementById("fullname").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
 
-        window.location.href = "login.html";
+        // Check if all fields are filled
+        if (
+            fullname === "" ||
+            email === "" ||
+            phone === "" ||
+            address === "" ||
+            password === "" ||
+            confirmPassword === ""
+        ) {
+            alert("Please fill in all fields.");
+            return;
+        }
 
-    })
-    .catch(error => {
+        // Check if passwords match
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return;
+        }
 
-        alert("❌ Registration failed!");
+        alert("Registration Successful!");
 
-        console.log(error);
+        // Redirect to Dashboard
+        window.location.href = "dashboard.html";
 
     });
-
-});
 
 }
