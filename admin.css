@@ -1,0 +1,33 @@
+/* ADMIN BUTTONS */
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: green;
+
+}
+.approve-btn{
+    background:#2E7D32;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:5px;
+}
+
+.approve-btn:hover{
+    background:#256428;
+}
+
+.delete-btn{
+    background:#d32f2f;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#b71c1c;
+}

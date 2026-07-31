@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | EcoPickup</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="dashboard-header">
+
+<div class="logo">
+♻ EcoPickup Admin
+</div>
+
+<a href="login.html" class="logout-btn">
+Logout
+</a>
+
+</header>
+
+<section class="dashboard">
+
+<h1>Admin Dashboard</h1>
+
+<p>Manage waste pickup requests.</p>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<i class="fas fa-users"></i>
+
+<h3>Registered Users</h3>
+
+<h2>25</h2>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fas fa-trash"></i>
+
+<h3>Total Requests</h3>
+
+<h2>40</h2>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fas fa-check-circle"></i>
+
+<h3>Completed</h3>
+
+<h2>18</h2>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fas fa-clock"></i>
+
+<h3>Pending</h3>
+
+<h2>22</h2>
+
+</div>
+
+</div>
+
+<br><br>
+
+<h2>Waste Pickup Requests</h2>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Waste Type</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Precious Etukudo</td>
+
+<td>Household Waste</td>
+
+<td>15 Aug 2026</td>
+
+<td><span class="pending">Pending</span></td>
+
+<td>
+
+<button class="approve-btn">Complete</button>
+
+<button class="delete-btn">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>John Peter</td>
+
+<td>Plastic Waste</td>
+
+<td>17 Aug 2026</td>
+
+<td><span class="completed">Completed</span></td>
+
+<td>
+
+<button class="delete-btn">Delete</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+</body>
+</html>

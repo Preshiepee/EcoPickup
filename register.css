@@ -1,0 +1,76 @@
+/* Register & Login Page */
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f4f4f4;
+}
+
+.form-box{
+    background:#fff;
+    width:400px;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.form-box h2{
+    color:#2E7D32;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.form-box p{
+    text-align:center;
+    margin-bottom:20px;
+    color:#555;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:6px;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+.input-box i{
+    color:#2E7D32;
+    margin-right:10px;
+}
+
+.input-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:15px;
+}
+
+.register-btn{
+    width:100%;
+    padding:12px;
+    background:#2E7D32;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.register-btn:hover{
+    background:#256428;
+}
+
+.login-link{
+    margin-top:15px;
+    text-align:center;
+}
+
+.login-link a{
+    color:#2E7D32;
+    text-decoration:none;
+    font-weight:600;
+}

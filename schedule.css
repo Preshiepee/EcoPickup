@@ -1,0 +1,363 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+header{
+    background:#2E7D32;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#FFD54F;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:50px;
+    color:#2E7D32;
+}
+
+.hero-text p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.hero-text a{
+    display:inline-block;
+    background:#2E7D32;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:6px;
+}
+
+.hero-text a:hover{
+    background:#256428;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:80%;
+}
+
+/* ===========================
+   ABOUT & SERVICES
+=========================== */
+
+section{
+    padding:60px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:30px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card i{
+    font-size:50px;
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#2E7D32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===========================
+   REGISTER & LOGIN
+=========================== */
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f4f4f4;
+}
+
+.form-box{
+    width:500px;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#2E7D32;
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.form-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    border:1px solid #ccc;
+    border-radius:6px;
+    padding:12px;
+    margin-bottom:20px;
+}
+
+.input-box i{
+    margin-right:10px;
+    color:#2E7D32;
+}
+
+.input-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+.form-btn{
+    width:100%;
+    background:#2E7D32;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.form-btn:hover{
+    background:#256428;
+}
+
+.login-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.login-link a{
+    color:#2E7D32;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.dashboard-header{
+    background:#2E7D32;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logout-btn{
+    background:white;
+    color:#2E7D32;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.dashboard{
+    text-align:center;
+    padding:60px 8%;
+}
+
+.dashboard h1{
+    color:#2E7D32;
+    margin-bottom:10px;
+}
+
+.dashboard p{
+    margin-bottom:40px;
+}
+
+.dashboard-cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.dashboard-card{
+    width:280px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#333;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-8px);
+}
+
+.dashboard-card i{
+    font-size:50px;
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   SCHEDULE PAGE
+=========================== */
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+select,
+input[type="date"],
+input[type="time"],
+input[type="text"],
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-image img{
+    width:100%;
+    margin-top:30px;
+}
+
+.form-box{
+    width:90%;
+}
+
+.dashboard-header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.dashboard-cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+.dashboard-card{
+    width:100%;
+}
+}

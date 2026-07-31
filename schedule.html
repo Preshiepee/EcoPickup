@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Pickup | EcoPickup</title>
+
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+
+<header class="dashboard-header">
+
+    <div class="logo">
+        ♻ EcoPickup
+    </div>
+
+    <a href="dashboard.html" class="logout-btn">
+        Dashboard
+    </a>
+
+</header>
+
+<div class="form-container">
+
+<div class="form-box">
+
+<h2>Schedule Waste Pickup</h2>
+
+<form id="pickupForm">
+
+<label>Waste Type</label>
+
+<select id="wasteType" required>
+
+<option value="">Select Waste Type</option>
+
+<option>Household Waste</option>
+
+<option>Plastic Waste</option>
+
+<option>Organic Waste</option>
+
+<option>Electronic Waste</option>
+
+</select>
+
+<label>Pickup Date</label>
+
+<input type="date" id="pickupDate" required>
+
+<label>Pickup Time</label>
+
+<input type="time" id="pickupTime" required>
+
+<label>Pickup Address</label>
+
+<input type="text"
+id="address"
+placeholder="Enter Pickup Address"
+required>
+
+<label>Additional Notes</label>
+
+<textarea
+id="notes"
+rows="4"
+placeholder="Optional"></textarea>
+
+<button type="submit" class="form-btn">
+
+Submit Request
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="schedule.js"></script>
+
+</body>
+</html>
